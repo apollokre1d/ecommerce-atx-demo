@@ -1,0 +1,82 @@
+# .NET Core
+bin/
+obj/
+out/
+*.user
+*.suo
+*.cache
+*.docstates
+*.userprefs
+
+# Visual Studio
+.vs/
+*.vscode/
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Entity Framework
+*.edmx.diagram
+*.edmx.sql
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# Connection strings and secrets
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+*.pfx
+
+# Docker
+Dockerfile.dev
+docker-compose.override.yml
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp

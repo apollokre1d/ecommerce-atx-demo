@@ -1,0 +1,56 @@
+name: Unzip and Deploy Project
+
+on:
+  push:
+    paths:
+      - '*.zip'
+  workflow_dispatch:
+
+jobs:
+  unzip-project:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Find and unzip project files
+      run: |
+        # Find zip files
+        for zipfile in *.zip; do
+          if [ -f "$zipfile" ]; then
+            echo "Found zip file: $zipfile"
+            
+            # Create temp directory
+            mkdir -p temp_extract
+            
+            # Unzip to temp directory
+            unzip "$zipfile" -d temp_extract/
+            
+            # Move contents to root (excluding the zip file itself)
+            cd temp_extract
+            find . -type f -not -name "*.zip" -exec cp --parents {} ../ \;
+            cd ..
+            
+            # Clean up
+            rm -rf temp_extract
+            
+            echo "Extracted contents of $zipfile"
+          fi
+        done
+        
+    - name: Commit extracted files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Add all new files
+        git add .
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-extract: Unzipped project files"
+          git push
+        fi
