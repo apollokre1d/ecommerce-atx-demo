@@ -3,39 +3,46 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECommerce.Data.Models;
 
+[Table("products", Schema = "ecommercedb_dbo")]
 public class Product
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Column("productid")]
     public int ProductId { get; set; }
 
     [Required]
     [MaxLength(255)]
+    [Column("name")]
     public string Name { get; set; } = string.Empty;
 
-    [Column(TypeName = "nvarchar(max)")]
+    [Column("description", TypeName = "nvarchar(max)")]
     public string? Description { get; set; }
 
     [Required]
-    [Column(TypeName = "decimal(18,2)")]
+    [Column("price", TypeName = "decimal(18,2)")]
     public decimal Price { get; set; }
 
     [Required]
+    [Column("categoryid")]
     public int CategoryId { get; set; }
 
-    [Column(TypeName = "datetime2")]
+    [Column("createddate", TypeName = "datetime2")]
     public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 
-    [Column(TypeName = "datetime2")]
+    [Column("modifieddate", TypeName = "datetime2")]
     public DateTime? ModifiedDate { get; set; }
 
+    [Column("isactive")]
     public bool IsActive { get; set; } = true;
 
     // Computed columns - will be configured in DbContext
     [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+    [Column("searchvector")]
     public string? SearchVector { get; set; }
 
     [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+    [Column("pricecategory")]
     public string? PriceCategory { get; set; }
 
     // Navigation properties

@@ -1,0 +1,17 @@
+{
+  "ECommerce.Data": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL"
+  ],
+  "ECommerce.API": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL",
+    "Microsoft.AspNetCore.OpenApi",
+    "Swashbuckle.AspNetCore",
+    "FluentValidation",
+    "FluentValidation.AspNetCore",
+    "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer"
+  ],
+  "ECommerce.Web": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Design"
+  ]
+}

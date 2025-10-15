@@ -1,0 +1,171 @@
+==========
+References
+==========
+ECommerce.Data
+Microsoft.EntityFrameworkCore
+ECommerce.Data.Models
+Microsoft.EntityFrameworkCore.Metadata.Builders
+Microsoft.EntityFrameworkCore.Infrastructure
+System
+Microsoft.Data.SqlClient
+System.ComponentModel.DataAnnotations.Schema
+System.ComponentModel.DataAnnotations
+ECommerce.Data.Repositories
+System.Linq
+
+Npgsql
+<global namespace>
+System.Threading.Tasks
+System.Text.RegularExpressions
+System.Data
+System.Collections.Generic
+Microsoft.EntityFrameworkCore.ChangeTracking
+Microsoft.EntityFrameworkCore.Storage
+System.IO
+System.Net.Http
+System.Threading
+NpgsqlTypes
+System.Linq.Expressions
+System.Text.Json
+project.all
+ECommerce.API.Controllers
+Microsoft.AspNetCore.Mvc
+AutoMapper
+ECommerce.API.Mapping
+Microsoft.AspNetCore.Http
+Microsoft.Extensions.Logging
+ECommerce.API.DTOs
+System.Net.Http.Json
+Microsoft.AspNetCore.Builder
+Microsoft.AspNetCore.Hosting
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.DependencyInjection
+Microsoft.Extensions.Hosting
+Microsoft.OpenApi.Models
+Serilog
+System.Reflection
+
+===============
+DownloadedFiles
+===============
+project.all.json
+system.net.http.json
+system.data.json
+
+==============
+ProjectResults
+==============
+----------------------
+Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/apollokre1d/ecommerce-atx-demo/ecommerce-core/src/ECommerce.Web/ECommerce.Web.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net8.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/apollokre1d/ecommerce-atx-demo/ecommerce-core/src/ECommerce.API/ECommerce.API.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net8.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/apollokre1d/ecommerce-atx-demo/ecommerce-core/src/ECommerce.Data/ECommerce.Data.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net8.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/apollokre1d/ecommerce-atx-demo/ecommerce-core/src/ECommerce.Web/ECommerce.Web.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net8.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/apollokre1d/ecommerce-atx-demo/ecommerce-core/src/ECommerce.Data/ECommerce.Data.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net8.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: /tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/transformedCode/sourceCode/apollokre1d/ecommerce-atx-demo/ecommerce-core/src/ECommerce.API/ECommerce.API.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net8.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+
+===========
+BuildErrors
+===========
+
+

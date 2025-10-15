@@ -3,37 +3,42 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECommerce.Data.Models;
 
+[Table("orders", Schema = "ecommercedb_dbo")]
 public class Order
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Column("orderid")]
     public int OrderId { get; set; }
 
     [Required]
+    [Column("customerid")]
     public int CustomerId { get; set; }
 
-    [Column(TypeName = "datetime2")]
+    [Column("orderdate", TypeName = "datetime2")]
     public DateTime OrderDate { get; set; } = DateTime.UtcNow;
 
-    [Column(TypeName = "datetime2")]
+    [Column("createddate", TypeName = "datetime2")]
     public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 
-    [Column(TypeName = "datetime2")]
+    [Column("modifieddate", TypeName = "datetime2")]
     public DateTime? ModifiedDate { get; set; }
 
     [Required]
-    [Column(TypeName = "decimal(18,2)")]
+    [Column("totalamount", TypeName = "decimal(18,2)")]
     public decimal TotalAmount { get; set; }
 
     [Required]
-    [Column(TypeName = "decimal(18,2)")]
+    [Column("taxamount", TypeName = "decimal(18,2)")]
     public decimal TaxAmount { get; set; }
 
     [Required]
     [MaxLength(20)]
+    [Column("status")]
     public string Status { get; set; } = "Pending";
 
     [MaxLength(500)]
+    [Column("shippingaddress")]
     public string? ShippingAddress { get; set; }
 
     // Computed property for subtotal
